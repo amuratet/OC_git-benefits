@@ -9,8 +9,54 @@
     <link rel="stylesheet" type="text/css" href="ressources/css/styles.css">
 </head>
 <body>
+
+    <header>
+        <div class="logo">
+            <img class="git-sigil" src="ressources/git-logos/Octocat.png" alt="github sigil">
+            <img class="git-logo" src="ressources/git-logos/GitHub_Logo.png" alt="github logo">
+
+        </div>
+        <p class="header-title">Les bienfaits de Git</p>
+        <p class="credits">Par amuratet</p>
+    </header>
     
-    <h1>hello!</h1>
+    <h1>Git ou le version<span class="word-break">-</span>ning<br><span class="h1-italic">Une nouvelle façon de coder</span></h1>
+
+    <div class="git-benefits">
+
+        <div class="big-projetcs">
+            <img src="ressources/icons/crane.svg" alt="image grue">
+            L'intérêt majeur d'utiliser Git est de faciliter le travail sur de gros mais aussi et surtout de pouvoir travailler à plusieurs sans être proche physiquement.
+            <br>On peut travailler sur des morceaux de codes et les tester sans altérer le code principal qui pourra, lui, évoluer parallèlement.
+            <br>On dit alors que l'on travaille sur des "<span class="underline-words">branches</span>" que l'on pourra fusionner plus tard avec le code principal (la branche "<span class="underline-words">master</span>").
+        </div>
+
+        <div class="bricks-add">
+            <img src="ressources/icons/brick.svg" alt="image briques">
+            Git permet, en outre, de revenir "en arrière" dans son code tout en pouvant ensuite revenir à la dernière version. Cela permet entre autre 
+            de trouver l'origine de bugs.<br>Chaque "<span class="underline-words">commit</span>" que l'on effectue est un marquage dans une sorte d'historique qui permet de revenir 
+            au code tel qu'il était à ce moment là.<br>Comme avec la DeLorean de Marty McFly.
+        </div>
+        
+        <div class="users-specialities">
+            <img src="ressources/icons/screwdriver.svg" alt="image outils">
+            La commande "<span class="underline-words">log</span>" par exemple, affichera tous les "commits" qui ont été effectués et l'on pourra choisir dans lequel envoyer la DeLorean.
+            <br>Nous verrons alors le code tel qu'il était à la date du dit "commit".
+        </div>
+        
+        <div class="finding-bugs">
+            <img src="ressources/icons/valve.svg" alt="image fuite">
+            <blockquote cite="https://www.supinfo.com/articles/single/2926-git-outil-indispensable-developpeurs">
+                "Git possède également l'avantage d'un système de gestion de versions déconnecté. C’est-à-dire qu’il est possible de
+                travailler en mode hors connexion avec son dépôt tout en gardant des fonctionnalités avancées de collaboration lorsqu’on
+                est connecté.            
+                <br>De plus, Git est très performant puisqu'il intègre beaucoup d’outils internes (notamment pour l’utilisation des
+                branches)."
+            </blockquote>
+            <cite>supinfo.com</cite>
+        </div>
+
+    </div>
     
 </body>
 

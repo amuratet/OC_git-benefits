@@ -18,8 +18,140 @@ html, body,h1, h2, h3, div, img, header, nav, section, label, input, textarea, b
     box-sizing: border-box;
     text-rendering: optimizeSpeed;
 }
+/* ===================================
+GLOBAL
+=================================== */
+
+body {
+    font-family: ubuntu, serif;
+    background-image: url("../patterns/triangles.png");
+}
+
 h1 {
-    font-family: qwigley;
-    font-size: 5em;
+    font-family: montserrat;
+    font-size: 3em;
+    line-height: 1em;
     font-weight: normal;
+    text-align: center;
+    color: #ddd;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+h1 span.word-break {
+    display: none;
+}
+h1 span.h1-italic {
+    font-size: .5em;
+    font-style: italic;
+}
+
+span.underline-words {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-bottom-color: #12a8ff;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: .1em .3em;
+}
+
+
+/* ===================================
+HEADER
+=================================== */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url("../patterns/topography.png");
+    align-items: center;
+}
+.logo {
+    display: flex;
+}
+
+.git-sigil {
+    margin-left: 50px;
+}
+
+.logo img {
+    height: 75px;
+}
+
+.header-title {
+    flex: 1;
+    text-align: center;
+    font-size: 75px;
+    padding: 0;
+    margin: 0;
+    font-family: qwigley;
+}
+.credits {
+    flex: 1;
+    align-self: flex-end;
+    margin-right: 20px;
+    text-align: right;
+}
+
+
+/* ===================================
+GIT-BENEFITS
+=================================== */
+
+.git-benefits {
+    color: #ddd;
+    font: normal 1.2em/1.5em montserrat, serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.git-benefits>div {
+    background-color: rgb(53, 23, 18);
+    background-image: url("../patterns/ep_naturalblack.png");
+    border-radius: 20px;
+    flex: 1;
+    min-width: 40%;
+    margin: 20px 1%;
+    padding: 20px;
+    text-align: justify;
+}
+.git-benefits>div::first-letter {
+    font-family: serif;
+    font-size: 2em;
+    text-shadow: .05em .05em .02em #12a8ff;
+    margin-right: .2em;
+}
+
+.git-benefits>div>img {
+    margin-right: 10px;
+    width: 50px;
+    float: left;
+}
+
+@media screen and (max-width: 640px) {
+    .git-benefits>div {
+        min-width: 100%;
+        margin: .5em 0;
+    }
+    .git-sigil {
+        margin: 0 auto;
+    }
+    .logo {
+        flex-flow: column wrap;
+    }
+    h1 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header-title {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 300px) {
+    h1 span.word-break {
+        display: inline-block;
+    }
 }
