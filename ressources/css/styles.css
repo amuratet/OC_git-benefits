@@ -130,6 +130,48 @@ GIT-BENEFITS
     float: left;
 }
 
+
+
+
+
+/* ==========================================
+SECTION GRID
+========================================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+}
+.grid div:nth-child(2) {
+    order: 1;
+}
+
+.grid div {
+    order: 2;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgba(14, 17, 85, 0.8);
+    padding: .2em;
+    color: #fff;
+    font-size: 120%;
+}
+.grid div:nth-child(2n) {
+    background-color: rgba(9, 58, 104, 0.8);
+}
+
+
+
+
+
+
+
+/* ==========================================
+MEDIA QUERRIES
+========================================== */
+
 @media screen and (max-width: 640px) {
     .git-benefits>div {
         min-width: 100%;
