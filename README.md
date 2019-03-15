@@ -1,1 +1,1 @@
-git@github.com:amuratet/OC_git-benefits.git
+https://amuratet.github.io/OC_git-benefits/
