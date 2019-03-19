@@ -139,27 +139,47 @@ SECTION GRID
 ========================================== */
 
 .grid {
+    padding: 1em;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 100px 100px;
-    grid-gap: 20px;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-gap: 5px;
+    grid-auto-rows: minmax(8em, auto);
+    /* grid-auto-flow: column; */
+    grid-auto-flow: dense;
 }
-.grid div:nth-child(2) {
-    order: 1;
-}
+
 
 .grid div {
     order: 2;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
-    background-color: rgba(14, 17, 85, 0.8);
+    /* background-color: rgba(14, 17, 85, 0.8); */
     padding: .2em;
     color: #fff;
     font-size: 120%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
-.grid div:nth-child(2n) {
-    background-color: rgba(9, 58, 104, 0.8);
+
+.w3 {
+    /* min-width: 30em; */
+    grid-column-end: span 3;
+}
+.w2 {
+    /* min-width: 20em; */
+    grid-column-end: span 2;
+}
+.h3 {
+    /* min-width: 30em; */
+    grid-row-end: span 3;
+}
+.h2 {
+    /* min-height: 20em; */
+    grid-row-end: span 2;
 }
 
 
@@ -197,3 +217,100 @@ MEDIA QUERRIES
         display: inline-block;
     }
 }
+
+/* SECTION PHOTO GALLERY
+==================================================== */
+
+html {
+    background: url("../images/prism.png");
+}
+
+.photo-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    background: url("../images/what-the-hex-dark.png") top left repeat rgb(180, 166, 101);
+    box-shadow: 0 0 15px #000;
+}
+
+/* .photo-gallery .column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+} */
+
+/* .photo-gallery .row {
+    display: flex;
+    flex-flow: row wrap;
+} */
+
+.photo-gallery .centered-text {
+    width: 400px;
+    height: 400px;
+    font-size: 1.5em;
+    color: #1f0e91;
+    text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(233, 199, 147, 0.5);
+    position: relative;
+    z-index: 5;
+}
+
+.photo-gallery img {
+    transition: all 2s;
+    display: block;
+}
+
+.photo-gallery .anim-text:hover img {
+    transition: transform .5s;
+    transform: scale(1.1);
+    filter: contrast(.5) drop-shadow(0px 0px 4px #4444dd) hue-rotate(-180deg) grayscale(.5);
+}
+
+.photo-gallery div {
+    overflow: hidden;
+}
+
+.photo-gallery div.anim-text {
+    position: relative;
+}
+
+/* ////////////////// texte photo \\\\\\\\\\\\\\\\\ */
+
+.photo-gallery .outrange-text {
+    transition: 1s;
+    position: absolute;
+    width: 2500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: .5em;
+    padding: .5em;
+    border-radius: 1em;
+    letter-spacing: 5em;
+    left: 1500px;
+    top: 0;
+    white-space: nowrap;
+    font: bold 1em/2em ubuntu, serif;
+    color: white;
+    text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
+}
+
+.photo-gallery div.anim-text:hover .outrange-text {
+    transition: left .5s ease-out, letter-spacing .8s ease-out, width 1s ease-out;
+    width: 350px;
+    left: 0;
+    letter-spacing: 0px;
+}
+
+.photo-gallery .outrange-text .photo-title {
+    font-size: 2em;
+    margin-left: 2em;
+    border-bottom: 2px solid #000;
+    padding-bottom: .1em;
+}
+
