@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <header>
+    <header id="header">
         <div class="logo">
             <img class="git-sigil" src="ressources/git-logos/Octocat.png" alt="github sigil">
             <img class="git-logo" src="ressources/git-logos/GitHub_Logo.png" alt="github logo">
@@ -19,33 +19,37 @@
         <p class="header-title">Les bienfaits de Git</p>
         <p class="credits">Par amuratet</p>
     </header>
+
+    <div class="up-arrow">
+            <a href="#header"><img src="ressources/icons/up-arrow.png" alt="up"></a>
+    </div>
     
     <h1>Git ou le version<span class="word-break">-</span>ning<br><span class="h1-italic">Une nouvelle façon de coder</span></h1>
 
     <div class="git-benefits">
 
         <div class="big-projetcs">
-            <img src="ressources/icons/crane.svg" alt="image grue">
+            <img class="git-uses-icon" src="ressources/icons/crane.svg" alt="image grue">
             L'intérêt majeur d'utiliser Git est de faciliter le travail sur de gros mais aussi et surtout de pouvoir travailler à plusieurs sans être proche physiquement.
             <br>On peut travailler sur des morceaux de codes et les tester sans altérer le code principal qui pourra, lui, évoluer parallèlement.
             <br>On dit alors que l'on travaille sur des "<span class="underline-words">branches</span>" que l'on pourra fusionner plus tard avec le code principal (la branche "<span class="underline-words">master</span>").
         </div>
 
         <div class="bricks-add">
-            <img src="ressources/icons/brick.svg" alt="image briques">
+            <img class="git-uses-icon" src="ressources/icons/brick.svg" alt="image briques">
             Git permet, en outre, de revenir "en arrière" dans son code tout en pouvant ensuite revenir à la dernière version. Cela permet entre autre 
             de trouver l'origine de bugs.<br>Chaque "<span class="underline-words">commit</span>" que l'on effectue est un marquage dans une sorte d'historique qui permet de revenir 
             au code tel qu'il était à ce moment là.<br>Comme avec la DeLorean de Marty McFly.
         </div>
         
         <div class="users-specialities">
-            <img src="ressources/icons/screwdriver.svg" alt="image outils">
+            <img class="git-uses-icon" src="ressources/icons/screwdriver.svg" alt="image outils">
             La commande "<span class="underline-words">log</span>" par exemple, affichera tous les "commits" qui ont été effectués et l'on pourra choisir dans lequel envoyer la DeLorean.
             <br>Nous verrons alors le code tel qu'il était à la date du dit "commit".
         </div>
         
         <div class="finding-bugs">
-            <img src="ressources/icons/valve.svg" alt="image fuite">
+            <img class="git-uses-icon" src="ressources/icons/valve.svg" alt="image fuite">
             <blockquote cite="https://www.supinfo.com/articles/single/2926-git-outil-indispensable-developpeurs">
                 "Git possède également l'avantage d'un système de gestion de versions déconnecté. C’est-à-dire qu’il est possible de
                 travailler en mode hors connexion avec son dépôt tout en gardant des fonctionnalités avancées de collaboration lorsqu’on
@@ -107,51 +111,54 @@
 
     <section class="photo-gallery">
     
-        <div class="anim-text w3"><img class="width-3" src="ressources/images/alternate-skate-3-1.jpg"
+        <div class="anim-text w3"><img src="ressources/images/alternate-skate-3-1.jpg"
                 alt="movement-image"><span class="outrange-text"><span class="photo-title">Longboard</span><br>Lorem ipsum
                 dolo<br>sit amet consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
     
-        <div class="anim-text"><img class="width-0" src="ressources/images/bird-1-1.jpg" alt="movement-image"><span
+        <div class="anim-text"><img src="ressources/images/bird-1-1.jpg" alt="movement-image"><span
                 class="outrange-text"><span class="photo-title">Colibri</span><br>Lorem ipsum dolo<br>sit amet consectetur
                 dipisicing<br>aelit. Praesentium, ea!</span></div>
     
-        <div class="anim-text w2"><img class="width-2" src="ressources/images/carAndTruck-night-2-1.jpg"
+        <div class="anim-text w2"><img src="ressources/images/carAndTruck-night-2-1.jpg"
                 alt="movement-image"><span class="outrange-text"><span class="photo-title">Car & truck</span><br>Lorem ipsum
                 dolo<br>sit amet consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
     
-        <div class="anim-text h2"><img class="height-2" src="ressources/images/city-car-lights-timelapse-1-2.jpg"
+        <div class="anim-text h2"><img src="ressources/images/city-car-lights-timelapse-1-2.jpg"
                 alt="movement-image"><span class="outrange-text width-3"><span class="photo-title">City
                     lights</span><br>Lorem ipsum dolo<br>sit amet consectetur dipisicing<br>aelit. Praesentium, ea!</span>
         </div>
     
         <div class="centered-text">Hello<br>guys</div>
+
         <div class="anim-text"><img src="ressources/images/kind-of-floyd-1-1.jpg" alt="movement-image"><span
                 class="outrange-text"><span class="photo-title">Some floyd</span><br>Lorem ipsum dolo<br>sit amet
                 consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
     
-        <div class="anim-text h2"><img class="height-2" src="ressources/images/drone-over-water-1-2.jpg"
+        <div class="anim-text h2"><img src="ressources/images/drone-over-water-1-2.jpg"
                 alt="movement-image"><span class="outrange-text"><span class="photo-title">Drone</span><br>Lorem ipsum
                 dolo<br>sit amet consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
     
-        <div class="anim-text w2"><img class="width-2" src="ressources/images/nightStars-timelapse-2-1.jpg"
+        <div class="anim-text w2"><img src="ressources/images/nightStars-timelapse-2-1.jpg"
                 alt="movement-image"><span class="outrange-text"><span class="photo-title">Timelapsed
                 stars</span><br>Lorem ipsum dolo<br>sit amet consectetur dipisicing<br>aelit. Praesentium,
                 ea!</span></div>
-        <div class="anim-text h2"><img class="height-2" src="ressources/images/skate-jump-1-2.jpg"
+
+        <div class="anim-text h2"><img src="ressources/images/skate-jump-1-2.jpg"
                 alt="movement-image"><span class="outrange-text"><span class="photo-title">Skateboard
                 jump</span><br>Lorem ipsum dolo<br>sit amet consectetur dipisicing<br>aelit. Praesentium,
                 ea!</span></div>
+
         <div class="anim-text"><img src="ressources/images/man-cooking-1-1.jpg" alt="movement-image"><span
                 class="outrange-text"><span class="photo-title">man cooking</span><br>Lorem ipsum dolo<br>sit
                 amet consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
+
         <div class="anim-text"><img src="ressources/images/man-jumping-dust-1-1.jpg" alt="movement-image"><span
                 class="outrange-text"><span class="photo-title">Man jumping</span><br>Lorem ipsum dolo<br>sit
                 amet consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
 
-        <div class="anim-text h3"><img class="height-3" src="ressources/images/kid-ocean-wave-1-3.jpg"
+        <div class="anim-text h3"><img src="ressources/images/kid-ocean-wave-1-3.jpg"
                 alt="movement-image"><span class="outrange-text"><span class="photo-title">Kid huge wave</span><br>Lorem
                 ipsum dolo<br>sit amet consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
-
     
     
         <div class="anim-text h2"><img class="height-2" src="ressources/images/serving-coffee-1-2.jpg"
@@ -162,18 +169,29 @@
         <div class="anim-text"><img src="ressources/images/fallingLemonInGlass-1-1.jpg" alt="movement-image"><span
                 class="outrange-text"><span class="photo-title">Lemon falling</span><br>Lorem ipsum dolo<br>sit amet
                 consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
+
         <div class="anim-text"><img src="ressources/images/woman-dancing-sunset-1-1.jpg" alt="movement-image"><span
                 class="outrange-text"><span class="photo-title">woman dancing</span><br>Lorem ipsum dolo<br>sit amet
                 consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
+
         <div class="anim-text centered-text">Hello<br>kids</div>
 
     
     
-        <div class="anim-text"><img class="width-3" src="ressources/images/waterPolo-3-1.jpg" alt="movement-image"><span
+        <div class="anim-text w3"><img class="width-3" src="ressources/images/waterPolo-3-1.jpg" alt="movement-image"><span
                 class="outrange-text"><span class="photo-title">Water Polo</span><br>Lorem ipsum dolo<br>sit amet
                 consectetur dipisicing<br>aelit. Praesentium, ea!</span></div>
     
     </section>
+
+
+
+
+    <footer>
+
+
+
+    </footer>
 
     
 </body>
